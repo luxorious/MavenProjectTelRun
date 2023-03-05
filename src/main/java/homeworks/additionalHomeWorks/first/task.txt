@@ -1,0 +1,148 @@
+Дополнительные задания.
+1.
+Написать консольную программу, которая запрашивает у пользователя два вещественных числа
+(числа с запятой) и выводит на консоль результаты: сложения, вычитания, умножения и деления.
+Вещественные числа можно запрашивать с консоли используя обьект Scanner
+следующим образом:
+
+    Scanner scanner = new Scanner(System.in);
+    double firstDoubleNumber = scanner.nextDouble();
+
+2.
+Написать консольную программу, которая запрашивает
+имя пользователя и выводит на консоль текст:
+Hello имя пользователя!
+
+3.
+Напишите программу, которая запрашивает у пользователя целое число
+и печатает на консоль таблицу умножения для этого числа до 10.
+
+Test Data:
+Input a number: 8
+
+Expected Output :
+8 x 1 = 8
+8 x 2 = 16
+8 x 3 = 24
+...
+8 x 10 = 80
+
+4.
+Напишите программу, которая запрашивает у пользователя
+радиус круга (вещественное число) и печатает на консоль
+периметр и площадь круга.
+
+Test Data:
+Radius = 7.5
+
+Expected Output
+Perimeter is = 47.12388980384689
+Area is = 176.71458676442586
+
+5.
+Напишите программу, которая запрашивает у пользователя
+три целых числа и выводит их среднее арифметическое
+(складывает все числа и делит на их количество).
+
+Примечение: обратите внимание, что результат может быть дробным числом.
+
+6.
+Заставьте эту программу работать!
+
+class SizeMatters {
+    public static void main(String[] args) {
+        system.out.println("Sorry, I have an errors.");
+        system.out.println("Please fix me!")
+    }
+}
+
+
+------------done--------------
+class SizeMatters {
+    public static void main(String[] args) {
+        System.out.println("Sorry, I have an errors.");
+        System.out.println("Please fix me!");
+    }
+}
+
+7.
+Исправьте ошибки компиляции в данной программе.
+
+public class SumTwoNumbers {
+
+   public static void main(String[] args) {
+
+      int numberOne;
+      int numberTwo;
+
+      System.out.println("Number 1 = " + numberOne);
+      System.out.println("Number 2 = " + numberTwo);
+
+      int numberOne = 10;
+      int numberTwo = 20;
+
+      int sum = numberOne + numberTwo;
+
+      System.out.println("Sum = " + sum);
+   }
+
+}
+-----------done----------
+ class SumTwoNumbers {
+
+    public static void main(String[] args) {
+
+        int numberOne = 10;
+        int numberTwo = 20;
+
+        System.out.println("Number 1 = " + numberOne);
+        System.out.println("Number 2 = " + numberTwo);
+
+        int sum = numberOne + numberTwo;
+
+        System.out.println("Sum = " + sum);
+    }
+}
+
+
+8.
+Исправьте ошибки компиляции в данной программе.
+
+public class CorrectDataTypes {
+
+   public static void main(String[] args) {
+
+      int numberOne = 10;
+      double numberTwo = 20.0;
+
+      System.out.println("Number 1 = " + numberOne);
+      System.out.println("Number 2 = " + numberTwo);
+
+      float sum = numberOne + numberTwo;
+
+      System.out.println("Sum = " + sum);
+   }
+
+}
+
+-------done------
+class CorrectDataTypes {
+
+    public static void main(String[] args) {
+
+        int numberOne = 10;
+        double numberTwo = 20.0;
+
+        System.out.println("Number 1 = " + numberOne);
+        System.out.println("Number 2 = " + numberTwo);
+
+        double sum = numberOne + numberTwo;
+
+        System.out.println("Sum = " + sum);
+    }
+
+}
+
+
+
+

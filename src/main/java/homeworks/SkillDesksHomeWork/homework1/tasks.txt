@@ -1,0 +1,17 @@
+Класс SkillDesksHomeWork.homeWork5.task1.SkillDesksHomeWork.homework1.homeWork1.Person
+Создать класс SkillDesksHomeWork.homeWork5.task1.SkillDesksHomeWork.homework1.homeWork1.Person, который содержит:
+
+
+переменные fullName, age;
+методы move() и talk(), в которых просто вывести на консоль сообщение -"Такой-то  SkillDesksHomeWork.homeWork5.task1.SkillDesksHomeWork.homework1.homeWork1.Person говорит".
+Добавьте два конструктора  - SkillDesksHomeWork.homeWork5.task1.SkillDesksHomeWork.homework1.homeWork1.Person() и SkillDesksHomeWork.homeWork5.task1.SkillDesksHomeWork.homework1.homeWork1.Person(fullName, age).
+Создайте два объекта этого класса. Один объект инициализируется конструктором SkillDesksHomeWork.homeWork5.task1.SkillDesksHomeWork.homework1.homeWork1.Person(), другой - SkillDesksHomeWork.homeWork5.task1.SkillDesksHomeWork.homework1.homeWork1.Person(fullName, age)
+
+
+2.Класс Phone.
+Создайте класс Phone, который содержит переменные number, model и weight.
+Создайте три экземпляра этого класса.
+Выведите на консоль значения их переменных.
+Добавить в класс Phone методы: receiveCall, имеет один параметр – имя звонящего.
+Выводит на консоль сообщение “Звонит {name}”. Метод getNumber – возвращает номер телефона.
+Вызвать эти методы для каждого из объектов.Ω
