@@ -6,7 +6,7 @@ import java.util.Random;
 public class GenerationNumbers {
     private final Random random = new Random();
 
-    public String generateCardData(){
+    public String generateCardData(int yearOfCreating){
         StringBuilder generatedCard = new StringBuilder();
         int monthYear = -1;
         for (int i = 1; i <= 22; i++) {
@@ -24,16 +24,11 @@ public class GenerationNumbers {
                 }
             } else if (i == 19) {
                 //generate year - not random;
-                generatedCard.append(getCurrentYear() + 5);
+                generatedCard.append(yearOfCreating + 5);
             } else {
                 generatedCard.append(random.nextInt(10));
             }
         }
         return generatedCard.toString();
-    }
-
-    private int getCurrentYear(){
-        Calendar calendar = Calendar.getInstance();
-        return (calendar.get(Calendar.YEAR) - 2000);
     }
 }
