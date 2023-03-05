@@ -15,12 +15,12 @@ public class Demo {
         SavingCard savingCard = new SavingCard();
         FindCardData findCardData = new FindCardData();
 
-        String txt = gc.generateCardData();
+        String txt = gc.generateCardData(23);
         System.out.println(findCardData.extractingData(txt));
 
         //add just number cards
         for (int i = 0; i < 10; i++) {
-            savingCard.saveCard(gc.generateCardData());
+            savingCard.saveCard(gc.generateCardData(23));
         }
 
         //show all data cards which saved in set
