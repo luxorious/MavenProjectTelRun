@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd23581-924a-406f-9098-6d4459408bdc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexCreditCards/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexCreditCards/FindCardData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexCreditCards/GenerationNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexCreditCards/SavingCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexCreditCards/task.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson21/junitExample/Sex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson21/junitExample/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson21/junitExample/UserApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson21/junitExample/UserUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JavaPro/CalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JavaPro/CardTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="8cd23581-924a-406f-9098-6d4459408bdc" name="Changes" comment="Maven repository" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +52,7 @@
   <component name="RunManager">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.chatGPTTasks.regexCreditCards.Demo" />
-      <module name="MavenProjectTelRun" />
+      <module name="JavaPro" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="homeworks.additionalHomeWorks.chatGPTTasks.regexCreditCards.*" />
@@ -88,7 +65,7 @@
     </configuration>
     <configuration name="RegExOpenAi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.chatGPTTasks.regex.RegExOpenAi" />
-      <module name="MavenProjectTelRun" />
+      <module name="JavaPro" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="homeworks.additionalHomeWorks.chatGPTTasks.regex.*" />
@@ -101,7 +78,7 @@
     </configuration>
     <configuration name="UserApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lessons.lesson21.junitExample.UserApp" />
-      <module name="MavenProjectTelRun" />
+      <module name="JavaPro" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lessons.lesson21.junitExample.*" />
@@ -113,7 +90,7 @@
       </method>
     </configuration>
     <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MavenProjectTelRun" />
+      <module name="JavaPro" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="JavaPro.*" />
@@ -128,7 +105,7 @@
       </method>
     </configuration>
     <configuration name="CalculatorTest.shouldSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MavenProjectTelRun" />
+      <module name="JavaPro" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="JavaPro.*" />
@@ -139,6 +116,19 @@
       <option name="MAIN_CLASS_NAME" value="JavaPro.CalculatorTest" />
       <option name="METHOD_NAME" value="shouldSum" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="JavaPro" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="JavaPro" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,8 +159,16 @@
       <workItem from="1677878232424" duration="9473000" />
       <workItem from="1677956275615" duration="3935000" />
       <workItem from="1677994323109" duration="6772000" />
-      <workItem from="1678002580806" duration="746000" />
+      <workItem from="1678002580806" duration="1100000" />
     </task>
+    <task id="LOCAL-00001" summary="Maven repository">
+      <created>1678004174960</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678004174960</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,5 +184,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Maven repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="Maven repository" />
   </component>
 </project>
