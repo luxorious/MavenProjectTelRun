@@ -27,6 +27,5 @@ public class Demo {
         for (String card : savingCard.getCardsAllData()){
             System.out.println(findCardData.extractingData(card));
         }
-
     }
 }
