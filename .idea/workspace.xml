@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cd23581-924a-406f-9098-6d4459408bdc" name="Changes" comment="Maven repository">
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexIp/CheckIP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexIp/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexCreditCards/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexCreditCards/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regex/RegExOpenAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regex/RegExOpenAi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexIp/CheckIP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexIp/CheckIP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.homeworks.additionalHomeWorks.chatGPTTasks.regexIp.Demo">
+  <component name="RunManager" selected="Application.RegExOpenAi">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.chatGPTTasks.regexCreditCards.Demo" />
       <module name="JavaPro" />
@@ -135,24 +134,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="JavaPro" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="JavaPro" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RegExOpenAi" />
         <item itemvalue="Application.homeworks.additionalHomeWorks.chatGPTTasks.regexIp.Demo" />
         <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.RegExOpenAi" />
         <item itemvalue="Application.UserApp" />
         <item itemvalue="JUnit.CalculatorTest.shouldSum" />
       </list>
@@ -174,7 +160,8 @@
       <workItem from="1677878232424" duration="9473000" />
       <workItem from="1677956275615" duration="3935000" />
       <workItem from="1677994323109" duration="6772000" />
-      <workItem from="1678002580806" duration="9327000" />
+      <workItem from="1678002580806" duration="9578000" />
+      <workItem from="1678121640065" duration="319000" />
     </task>
     <task id="LOCAL-00001" summary="Maven repository">
       <created>1678004174960</created>
@@ -218,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678006814369</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Maven repository">
+      <created>1678012854246</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678012854246</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
