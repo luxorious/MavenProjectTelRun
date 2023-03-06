@@ -13,12 +13,19 @@ public class RegExOpenAi{
 //        findWordsCyrillic();
 //        replaceLetter();
 //        checkDigitsAnd();
-        findWordsByLength();
+//        findWordsByLength();
+        checkCyrillicLatin();
+    }
+
+    public static void checkCyrillicLatin(){
+        String text = "someTextWithКирилицяТаЛатиниця";
+        String regex = "[a-zA-Zа-яА-Я]";
+        pattern(regex, text);
     }
     public static void findWordsByLength(){
 //        Знайдіть у тексті всі слова, які складаються з 5 літер.
         String text = "somes texts different languages ddesw";
-        String regex = "^[a-zA-Z]{5}$";
+        String regex = "\\b[a-zA-Z]{5}\\b";
 
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(text);
@@ -108,11 +115,10 @@ public class RegExOpenAi{
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(text);
 
-
+        System.out.println(matcher.find());
         while (matcher.find()){
             System.out.print(matcher.group() + " ");
         }
-        System.out.println(matcher.find());
         System.out.println();
     }
 }
