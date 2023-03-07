@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd23581-924a-406f-9098-6d4459408bdc" name="Changes" comment="Maven repository">
+    <list default="true" id="8cd23581-924a-406f-9098-6d4459408bdc" name="Changes" comment="regEx">
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/morse/CreateMorseTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/morse/DecodeMorse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/morse/Encode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/morse/MorseDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson22/lessoncode/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson22/lessoncode/CarDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson22/lessoncode2/StringMatcherExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regex/RegExOpenAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regex/RegExOpenAi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexIp/CheckIP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexIp/CheckIP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,13 +70,39 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RegExOpenAi">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.chatGPTTasks.regexCreditCards.Demo" />
+  <component name="RunManager" selected="Application.MorseDemo">
+    <configuration name="CarDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lessons.lesson22.lessoncode.CarDemo" />
       <module name="JavaPro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworks.additionalHomeWorks.chatGPTTasks.regexCreditCards.*" />
+          <option name="PATTERN" value="lessons.lesson22.lessoncode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InitialMorseTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.morse.InitialMorseTable" />
+      <module name="JavaPro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homeworks.additionalHomeWorks.morse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MorseDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.morse.MorseDemo" />
+      <module name="JavaPro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homeworks.additionalHomeWorks.morse.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,55 +123,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lessons.lesson21.junitExample.UserApp" />
+    <configuration name="StringMatcherExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lessons.lesson22.lessoncode2.StringMatcherExample" />
       <module name="JavaPro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lessons.lesson21.junitExample.*" />
+          <option name="PATTERN" value="lessons.lesson22.lessoncode2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="homeworks.additionalHomeWorks.chatGPTTasks.regexIp.Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.chatGPTTasks.regexIp.Demo" />
-      <module name="JavaPro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homeworks.additionalHomeWorks.chatGPTTasks.regexIp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest.shouldSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaPro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JavaPro.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JavaPro" />
-      <option name="MAIN_CLASS_NAME" value="JavaPro.CalculatorTest" />
-      <option name="METHOD_NAME" value="shouldSum" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MorseDemo" />
+        <item itemvalue="Application.InitialMorseTable" />
+        <item itemvalue="Application.StringMatcherExample" />
+        <item itemvalue="Application.CarDemo" />
         <item itemvalue="Application.RegExOpenAi" />
-        <item itemvalue="Application.homeworks.additionalHomeWorks.chatGPTTasks.regexIp.Demo" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.UserApp" />
-        <item itemvalue="JUnit.CalculatorTest.shouldSum" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +163,9 @@
       <workItem from="1677956275615" duration="3935000" />
       <workItem from="1677994323109" duration="6772000" />
       <workItem from="1678002580806" duration="9578000" />
-      <workItem from="1678121640065" duration="319000" />
+      <workItem from="1678121640065" duration="1020000" />
+      <workItem from="1678125986421" duration="4782000" />
+      <workItem from="1678209273703" duration="8271000" />
     </task>
     <task id="LOCAL-00001" summary="Maven repository">
       <created>1678004174960</created>
@@ -212,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678012854246</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="regEx">
+      <created>1678122238544</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678122238544</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +242,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Maven repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Maven repository" />
+    <MESSAGE value="regEx" />
+    <option name="LAST_COMMIT_MESSAGE" value="regEx" />
   </component>
 </project>
