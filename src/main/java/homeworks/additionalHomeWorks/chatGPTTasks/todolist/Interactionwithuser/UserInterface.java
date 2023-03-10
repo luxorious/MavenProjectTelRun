@@ -11,6 +11,7 @@ public class UserInterface {
     private Map<Integer, ToDoList> actionWithToDoList = new HashMap<>();
     private ToDoList toDoList = new ToDoList();
     private UserInput userInput = new UserInput();
+
     public void menu(int userChoice){
         switch (userChoice) {
             case 1 -> toDoList.add(userInput.inputTask());
@@ -27,10 +28,9 @@ public class UserInterface {
                 System.out.println("input name of case for show by name");
                 toDoList.showByName(userInput.input());
             }
-//            default -> System.out.println("Thank you! Good by!");
         }
-
     }
+
     public void menu(){
         System.out.println("""
                 1 - Додати нову справу,
