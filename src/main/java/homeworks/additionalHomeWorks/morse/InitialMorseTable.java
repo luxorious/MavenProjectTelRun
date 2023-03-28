@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class InitialMorseTable {
 
-    Map<String, String> MORSE = new HashMap<>();
+    final Map<String, String> MORSE = new HashMap<>();
 
     public InitialMorseTable() {
         fillMorse();

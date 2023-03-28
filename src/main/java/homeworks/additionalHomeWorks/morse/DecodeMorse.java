@@ -8,18 +8,21 @@ public class DecodeMorse {
         StringBuilder decodedText = new StringBuilder();
         String[] splittedText = textToDecode.split("   ");
 
+        long startTime = System.currentTimeMillis();
         for (String str : splittedText){
             String[] symbol = str.split(" ");
             for (String ch : symbol){
                 for (Map.Entry<String, String> entry : morseTable.MORSE.entrySet()){
                     if (entry.getValue().equals(ch)){
-                        String key = entry.getKey();
-                        decodedText.append(key);
+                        decodedText.append(entry.getKey());
                     }
                 }
             }
             decodedText.append(" ");
         }
+
+        System.out.println("time = " + (System.currentTimeMillis()-startTime));
+        
         System.out.println(decodedText);
         return decodedText;
     }

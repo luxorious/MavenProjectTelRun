@@ -13,11 +13,9 @@ public class Encode {
         for (String str : splittedText){
             String[] symbol = str.split("");
             for (String ch : symbol){
-                for (Map.Entry<String, String> entry : morseTable.MORSE.entrySet()){
-                    if (entry.getKey().equals(ch)){
-                        encoded.append(entry.getValue());
-                        encoded.append(" ");
-                    }
+                if (morseTable.MORSE.containsKey(ch)){
+                    encoded.append(morseTable.MORSE.get(ch));
+                    encoded.append(" ");
                 }
             }
             encoded.append("   ");

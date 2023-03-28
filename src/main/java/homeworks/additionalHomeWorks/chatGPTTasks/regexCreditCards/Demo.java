@@ -20,7 +20,7 @@ public class Demo {
 
         //add just number cards
         for (int i = 0; i < 10; i++) {
-            savingCard.saveCard(gc.generateCardData(23));
+            savingCard.saveCard(gc.generateCardData(28));
         }
 
         //show all data cards which saved in set
