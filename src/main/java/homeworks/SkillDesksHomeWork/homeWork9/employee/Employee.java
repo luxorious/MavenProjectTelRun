@@ -2,6 +2,8 @@ package homeworks.SkillDesksHomeWork.homeWork9.employee;
 
 import lombok.*;
 
+import java.time.LocalDate;
+
 @AllArgsConstructor
 @ToString
 @Getter
@@ -24,6 +26,7 @@ public class Employee {
 
     private String fullName;
     private double salary;
+    LocalDate salaryDate;
 
 
 }
