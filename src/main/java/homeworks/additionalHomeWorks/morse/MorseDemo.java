@@ -1,17 +1,26 @@
 package homeworks.additionalHomeWorks.morse;
 
+import java.io.IOException;
+
 public class MorseDemo {
-    public static void main(String[] args) {
-        DecodeMorse decoding = new DecodeMorse();
+    public static void main(String[] args) throws IOException {
+        DecodeMorse decode = new DecodeMorse();
         Encode encode = new Encode();
 
-        String encoded = "Привіт, як справи?";
-        String codded1 = ".−−. .−. −.−− .−− .. − --..--    −... .−.. .. −.    .−.− −.−    ... .−−. .−. .− .−− −.−− ..--..";
+        FileUtils file = new FileUtils();
+        String wap = file.readTextFileToString("src/main/resources/file.txt");
+
+
+
+        String encoding = "Привіт, як справи?";
+        String decoding = ".−−. .−. −.−− .−− .. − --..--    .−.− −.−    ... .−−. .−. .− .−− −.−− ..--..";
 
         System.out.println("Decoded text");
-        decoding.decodingMorse(codded1);
+        decode.decodingMorse(decoding);
         System.out.println("encoded text");
-        System.out.println(encode.encode(encoded));
+        long startTime = System.currentTimeMillis();
+//        System.out.println(encode.encode(wap));
+        System.out.println("time wap = " + (System.currentTimeMillis()-startTime));
 
     }
 }
