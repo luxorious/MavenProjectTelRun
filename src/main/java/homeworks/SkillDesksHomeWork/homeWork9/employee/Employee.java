@@ -2,9 +2,11 @@ package homeworks.SkillDesksHomeWork.homeWork9.employee;
 
 import lombok.*;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.time.LocalDate;
 
-@AllArgsConstructor
 @ToString
 @Getter
 @Setter
@@ -26,7 +28,21 @@ public class Employee {
 
     private String fullName;
     private double salary;
-    LocalDate salaryDate;
+    private LocalDate salaryDate;
 
+    public Employee(String fullName, double salary) {
+        this.fullName = fullName;
+        this.salary = salary;
+        this.salaryDate = LocalDate.now();
+    }
 
+    public void saveReport(String report) {
+        File file = new File("src/main/resources/report.txt");
+        try (PrintWriter writer = new PrintWriter(file)){
+            writer.println(report);
+            System.out.println("data saved!");
+        } catch (FileNotFoundException e){
+            System.out.println(e.getMessage());
+        }
+    }
 }

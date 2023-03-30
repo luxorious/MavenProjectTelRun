@@ -1,5 +1,6 @@
 package homeworks.SkillDesksHomeWork.homeWork8;
 
+import static java.lang.Double.NaN;
 import static java.lang.Math.round;
 
 public class SquareEquation {
@@ -14,7 +15,7 @@ public class SquareEquation {
         this.param3 = param3;
     }
 
-    Roots solution() {
+    private Roots solving() throws ArithmeticException{
         int d = (param2 * param2) - 4 * (param1 * param3);
         double x1 = (-param2 - Math.sqrt(d)) / (2 * param1);
         double x2 = (-param2 + Math.sqrt(d)) / (2 * param1);
@@ -28,6 +29,18 @@ public class SquareEquation {
             return new Roots(x1);
         } else {
             return new Roots(x1, x2);
+        }
+    }
+
+    public Roots solution(){
+        try{
+            return solving();
+        } catch (ArithmeticException e){
+            System.out.println("Equation has not roots");
+
+            //что в таком случае лучше вернуть строку 42 или 43?
+//            return new Roots(NaN, NaN);
+            return null;
         }
     }
 }

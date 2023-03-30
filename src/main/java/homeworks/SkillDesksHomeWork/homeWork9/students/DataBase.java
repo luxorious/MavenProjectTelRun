@@ -18,11 +18,11 @@ public class DataBase {
         studentsDB.add(student);
     }
 
-//    Написать метод, который удаляет студентов со средним баллом <3.
+    //    Написать метод, который удаляет студентов со средним баллом <3.
     public List<Student> expel() {
         List<Student> expelledStudents = new ArrayList<>();
-        if (studentsDB.get(0).getEvaluation().isEmpty()){
-//            return expelledStudents;
+        if (studentsDB.get(0).getEvaluation().isEmpty()) {
+            return expelledStudents;
         }
         for (Student student : studentsDB) {
             if (averageScore(student)) {
@@ -33,12 +33,12 @@ public class DataBase {
         return expelledStudents;
     }
 
-    //заполнить оценки только для удобства чтоб не вводить все вручную, думаю для дз сойдет.
-    public void fillTheGrades(){
-        for(Student student : getStudentsDB()){
+    //заполнить оценки только для удобства чтоб не вводить все вручную.
+    public void fillTheGrades() {
+        for (Student student : getStudentsDB()) {
             List<Integer> evaluation1 = new ArrayList<>(10);
             for (int i = 0; i < 10; i++) {
-                int random = new Random().nextInt(2,6);
+                int random = new Random().nextInt(2, 6);
                 evaluation1.add(i, random);
             }
             student.setEvaluation(evaluation1);
@@ -48,7 +48,7 @@ public class DataBase {
 
     //переводит на следующий курс, если оценки позволяют
     public void transferToNextCourse() {
-        if (studentsDB.get(0).getEvaluation().isEmpty()){
+        if (studentsDB.get(0).getEvaluation().isEmpty()) {
             return;
         }
         for (Student student : studentsDB) {
@@ -63,14 +63,11 @@ public class DataBase {
         }
     }
 
-//    проверка на средний балл если студент подлежит отчислению, возвращаем true
+    //    проверка на средний балл если студент подлежит отчислению, возвращаем true
     private boolean averageScore(Student student) {
         int grade = 0;
-        if (student.getEvaluation().size() == 0){
-            //вызываем исключение так как нельзя перевести студента
-            // на следующий курс без сдачи сессии.
+        if (student.getEvaluation().size() == 0) {
             System.out.println("нельзя без сдачи сессии отчислить или перевести студента на следующий курс");
-            throw new ArithmeticException();
         }
         for (int evaluation : student.getEvaluation()) {
             grade += evaluation;
@@ -78,7 +75,7 @@ public class DataBase {
         return (grade / student.getEvaluation().size()) < 3;
     }
 
-//    Напишите метод printStudents(List<Student> students, int course),
+    //    Напишите метод printStudents(List<Student> students, int course),
 //    который получает список студентов и номер курса.
 //    А также печатает на консоль имена тех студентов из списка,
 //    которые обучаются на данном курсе.
