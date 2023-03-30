@@ -1,16 +1,7 @@
 package homeworks.SkillDesksHomeWork.homeWork9.employee;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
-import javax.swing.*;
-import java.util.HashSet;
 import java.util.Set;
 
-@Getter
-@Setter
-@ToString
 public class Report {
 //    оздать класс Employee, у которого есть переменные класса - fullname, salary.
 //    Создать коллекцию, содержащую несколько объектов этого типа.
@@ -25,11 +16,12 @@ public class Report {
 //
 //    Добавить метод в класс Employee, который будет записывать отчет в файл.
 //    Используем класс PrintWriter.
-    private Set<Employee> employees = new HashSet<>();
 
-    public void generateReport(){
+    public String generateReport(Set<Employee> employees){
+        StringBuilder sb = new StringBuilder();
         for (Employee employee : employees){
-            System.out.printf("Full Name %s, salary %100.2f", employee.getFullName(), employee.getSalary());
+           sb.append(String.format("Full Name %s, salary %100.2f\n", employee.getFullName(), employee.getSalary()));
         }
+        return sb.toString();
     }
 }

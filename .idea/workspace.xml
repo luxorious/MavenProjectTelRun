@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cd23581-924a-406f-9098-6d4459408bdc" name="Changes" comment="ToDoList">
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/employee/FullReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/Example1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/Example2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/OneThreading.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/TouristsCompany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/UserRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/UserThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork8/SquareDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork8/SquareDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork8/SquareEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork8/SquareEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/employee/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/employee/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/employee/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/employee/Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/students/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/students/DataBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,25 +62,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/macbook/Documents/TelRan/MavenProjectTelRun/src/main/java/homeworks/SkillDesksHomeWork",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/macbook/Documents/TelRan/MavenProjectTelRun/src/main/java/homeworks/SkillDesksHomeWork&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork" />
@@ -87,16 +100,17 @@
       <recent name="lessons.lesson23.junit" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lessons.lesson28.multithreading" />
       <recent name="lessons.lesson26.lessoncode" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StudentsDemo">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.SkillDesksHomeWork.homeWork9.employee.Demo" />
+  <component name="RunManager" selected="Application.SquareDemo">
+    <configuration name="Example2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lessons.lesson28.multithreading.Example2" />
       <module name="JavaPro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworks.SkillDesksHomeWork.homeWork9.employee.*" />
+          <option name="PATTERN" value="lessons.lesson28.multithreading.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentsDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.SkillDesksHomeWork.homeWork9.students.StudentsDemo" />
+    <configuration name="TouristsCompany" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lessons.lesson28.multithreading.TouristsCompany" />
       <module name="JavaPro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworks.SkillDesksHomeWork.homeWork9.students.*" />
+          <option name="PATTERN" value="lessons.lesson28.multithreading.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,44 +144,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquareEquationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRunnable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lessons.lesson28.multithreading.UserRunnable" />
       <module name="JavaPro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworks.SkillDesksHomeWork.homeWork8.*" />
+          <option name="PATTERN" value="lessons.lesson28.multithreading.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="homeworks.SkillDesksHomeWork.homeWork8" />
-      <option name="MAIN_CLASS_NAME" value="homeworks.SkillDesksHomeWork.homeWork8.SquareEquationTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquareEquationTest.ifEquationHas2Roots" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lessons.lesson28.multithreading.UserThread" />
       <module name="JavaPro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworks.SkillDesksHomeWork.homeWork8.*" />
+          <option name="PATTERN" value="lessons.lesson28.multithreading.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="homeworks.SkillDesksHomeWork.homeWork8" />
-      <option name="MAIN_CLASS_NAME" value="homeworks.SkillDesksHomeWork.homeWork8.SquareEquationTest" />
-      <option name="METHOD_NAME" value="ifEquationHas2Roots" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StudentsDemo" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="JUnit.SquareEquationTest" />
-        <item itemvalue="JUnit.SquareEquationTest.ifEquationHas2Roots" />
         <item itemvalue="Application.SquareDemo" />
+        <item itemvalue="Application.TouristsCompany" />
+        <item itemvalue="Application.UserRunnable" />
+        <item itemvalue="Application.UserThread" />
+        <item itemvalue="Application.Example2" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +214,9 @@
       <workItem from="1679830090953" duration="426000" />
       <workItem from="1679830535699" duration="3551000" />
       <workItem from="1679854032615" duration="7003000" />
-      <workItem from="1680024354308" duration="3286000" />
+      <workItem from="1680024354308" duration="6010000" />
+      <workItem from="1680106628095" duration="9857000" />
+      <workItem from="1680196869250" duration="2465000" />
     </task>
     <task id="LOCAL-00001" summary="Maven repository">
       <created>1678004174960</created>
@@ -291,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680026785915</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ToDoList">
+      <created>1680027948146</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680027948146</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,11 +345,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/regexCreditCards/Demo.java</url>
           <line>22</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork8/SquareEquation.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
