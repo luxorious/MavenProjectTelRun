@@ -4,59 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b945fee5-ff14-4a66-b196-a2a24b6b6e10" name="Changes" comment="maven">
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/resources/sdfg.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/userInput/UserInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/userInterface/UserInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/util/ContactsUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/multithrading/task1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/joinExample/App1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/joinExample/App2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/joinExample/demo1/CountDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/joinExample/demo1/Counter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/joinExample/demo1/CounterRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/joinExample/demo2/DemoThread2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/joinExample/demo2/DemoThreadExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/lessonCode/MultiExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/lessonCode/MultiExample2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multiRunnable/LambdaDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multiRunnable/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multiRunnable/MyRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multiRunnable/multi3/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multiRunnable/multi3/CarApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multiThread/multi/MyFirstThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multiThread/multi/SecondThreadDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multiThread/multi2/MySecondThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multiThread/multi2/SecondThreadDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multiThread/multi3/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multiThread/multi3/CarApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson30/App1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson30/App2.java" afterDir="false" />
+    <list default="true" id="b945fee5-ff14-4a66-b196-a2a24b6b6e10" name="Changes" comment="PhoneBook">
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/ABC_printer_NOT_FINISHED/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/ABC_printer_NOT_FINISHED/LetterPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/Counter/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/Counter/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Control.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Harbor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Ship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/printerScaner/MFU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/printerScaner/MFUDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/symbolCounter/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/symbolCounter/SymbolCounterOneThreading.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/symbolCounter/SymbolCounterRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/task.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/textWriter/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/textWriter/TextWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork8/Roots.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork8/SquareDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork8/SquareEquation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork8/Task.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/employee/Demo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/employee/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/employee/FullReport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/employee/Report.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/students/DataBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/students/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/students/StudentsDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/SkillDesksHomeWork/homeWork9/task.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/projects/ContactsUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/projects/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/service/PhoneBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/projects/task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/task.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/Example1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson27/multithreading/Example1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/Example2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson27/multithreading/Example2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/OneThreading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson27/multithreading/OneThreading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson27/multithreading/People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/TouristsCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson27/multithreading/TouristsCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/UserRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson27/multithreading/UserRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lessons/lesson28/multithreading/UserThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson27/multithreading/UserThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/resources/sdfg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/resources/sdfg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/service/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/service/PhoneBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/userInterface/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/userInterface/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/util/ContactsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/util/ContactsUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,26 +78,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "extract.method.default.visibility": "private",
-    "last_opened_file_path": "/Users/macbook/Documents/TelRan/MavenProjectTelRun/src/main/java/lessons/lesson28/multiRunnable",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "copyright"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/macbook/Documents/TelRan/MavenProjectTelRun/src/main/java/lessons/lesson28/multiRunnable&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/lessons/lesson28/multiRunnable" />
@@ -153,13 +124,13 @@
       <recent name="lessons.lesson26.lessoncode" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Demo">
+  <component name="RunManager" selected="Application.homeworks.additionalHomeWorks.multithreading.harbor.Demo">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.chatGPTTasks.PhoneBook.Demo" />
+      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.multithreading.Counter.Demo" />
       <module name="MavenProjectTelRun" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworks.additionalHomeWorks.chatGPTTasks.PhoneBook.*" />
+          <option name="PATTERN" value="homeworks.additionalHomeWorks.multithreading.Counter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoThreadExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lessons.lesson28.joinExample.demo2.DemoThreadExample" />
+    <configuration name="MFUDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.multithreading.printerScaner.MFUDemo" />
       <module name="MavenProjectTelRun" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lessons.lesson28.joinExample.demo2.*" />
+          <option name="PATTERN" value="homeworks.additionalHomeWorks.multithreading.printerScaner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,12 +151,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lessons.lesson28.lessonCode.MultiExample" />
+    <configuration name="homeworks.additionalHomeWorks.multithreading.ABC_printer_NOT_FINISHED.Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.multithreading.ABC_printer_NOT_FINISHED.Demo" />
       <module name="MavenProjectTelRun" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lessons.lesson28.lessonCode.*" />
+          <option name="PATTERN" value="homeworks.additionalHomeWorks.multithreading.ABC_printer_NOT_FINISHED.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,12 +164,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiExample2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lessons.lesson28.lessonCode.MultiExample2" />
+    <configuration name="homeworks.additionalHomeWorks.multithreading.harbor.Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.multithreading.harbor.Demo" />
       <module name="MavenProjectTelRun" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lessons.lesson28.lessonCode.*" />
+          <option name="PATTERN" value="homeworks.additionalHomeWorks.multithreading.harbor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,12 +177,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lessons.lesson30.App2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lessons.lesson30.App2" />
+    <configuration name="homeworks.additionalHomeWorks.multithreading.textWriter.Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.multithreading.textWriter.Demo" />
       <module name="MavenProjectTelRun" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lessons.lesson30.*" />
+          <option name="PATTERN" value="homeworks.additionalHomeWorks.multithreading.textWriter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -221,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.homeworks.additionalHomeWorks.multithreading.harbor.Demo" />
         <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.lessons.lesson30.App2" />
-        <item itemvalue="Application.MultiExample2" />
-        <item itemvalue="Application.MultiExample" />
-        <item itemvalue="Application.DemoThreadExample" />
+        <item itemvalue="Application.homeworks.additionalHomeWorks.multithreading.textWriter.Demo" />
+        <item itemvalue="Application.MFUDemo" />
+        <item itemvalue="Application.homeworks.additionalHomeWorks.multithreading.ABC_printer_NOT_FINISHED.Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +241,9 @@
       <workItem from="1680202670185" duration="42000" />
       <workItem from="1680204753092" duration="92000" />
       <workItem from="1680343142772" duration="4128000" />
-      <workItem from="1680431009239" duration="46594000" />
+      <workItem from="1680431009239" duration="60632000" />
+      <workItem from="1681309736910" duration="1189000" />
+      <workItem from="1681312033335" duration="38343000" />
     </task>
     <task id="LOCAL-00001" summary="Maven repository">
       <created>1678004174960</created>
@@ -363,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680027948146</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="PhoneBook">
+      <created>1680848359782</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680848359782</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +365,8 @@
     <MESSAGE value="regEx" />
     <MESSAGE value="MorseCode" />
     <MESSAGE value="ToDoList" />
-    <option name="LAST_COMMIT_MESSAGE" value="ToDoList" />
+    <MESSAGE value="PhoneBook" />
+    <option name="LAST_COMMIT_MESSAGE" value="PhoneBook" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -36,20 +36,20 @@ public class PhoneBook {
     public String toString() {
         String info = "";
         if (name != null) {
-            info += "name - " + name + "\n";
+            info += "name - " + name + " ";
         }
-        if (surname != null) {
-            info += "surname - " + surname + "\n";
+        if (surname != null && surname.equals("")) {
+            info += "surname - " + surname + " ";
         }
-        info += "phoneNumber=" + phoneNumber + "\n";
-        if (eMail != null) {
-            info += "eMail='" + eMail + "\n";
+        info += "phoneNumber - " + phoneNumber + " ";
+        if (eMail != null && eMail.equals("")) {
+            info += "eMail - " + eMail + " ";
         }
-        if (dateOfBirth != null) {
-            info += ", dateOfBirth='" + dateOfBirth + "\n";
+        if (dateOfBirth != null && dateOfBirth.equals("")) {
+            info += " dateOfBirth - " + dateOfBirth + " ";
         }
-        if (company != null) {
-            info += "company - " + company + "\n";
+        if (company != null && company.equals("")) {
+            info += "company - " + company + " ";
         }
         return info;
     }

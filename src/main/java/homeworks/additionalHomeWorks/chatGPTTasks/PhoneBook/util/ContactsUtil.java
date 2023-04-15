@@ -13,7 +13,7 @@ public class ContactsUtil {
     private List<PhoneBook> listOfContacts = new LinkedList<>();
     //зберігаємо тут повідомлення, які будуть показуватись коли користувач
     // захоче додати новий контакт у телефонну книгу...
-    private final List<String> messages = new ArrayList<>(List.of("Enter name", "Enter surname", "Enter phoneNumber",
+    private final List<String> messages = new ArrayList<>(List.of("Enter name", "Enter surname", "Enter phone number",
             "Enter eMail", "Enter date Of Birth", "Enter company"));
 
 //    Користувач повинен мати можливість додавати нові контакти,
@@ -28,16 +28,16 @@ public class ContactsUtil {
     public void createContact() {
         String[] constructor = new String[6];
         for (int i = 0; i < messages.size(); i++) {
-            System.out.println(messages.get(i));
             if (i == 1 || i > 2) {
                 System.out.println("*This field is optional*");
                 System.out.println("If you don't want to add a field, just input \"n\"");
                 String input = UserInput.input(messages.get(i));
-                if (input.equalsIgnoreCase("n")) {
-                    constructor[i] = "";
-                } else {
-                    constructor[i] = input;
-                }
+                constructor[i] = input;
+//                if (input.equalsIgnoreCase("n")) {
+//                    constructor[i] = "";
+//                } else {
+//                    constructor[i] = input;
+//                }
                 continue;
             }
             constructor[i] = UserInput.input(messages.get(i));
@@ -99,21 +99,32 @@ public class ContactsUtil {
     }
 
     public void showAll() {
+        if (listOfContacts.isEmpty()) {
+            System.out.println("contacts not found");
+        }
         for (PhoneBook book : listOfContacts) {
             System.out.println(book);
         }
     }
 
     public void export() {
+        if (listOfContacts.isEmpty()) {
+            System.out.println("Nothing found for export");
+            return;
+        }
         String fileName = "src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/resources/"
                 + UserInput.input("enter file name") + ".csv";
         try (FileWriter file = new FileWriter(fileName)) {
             StringBuilder str = new StringBuilder();
             String data = "";
             for (PhoneBook contact : listOfContacts) {
-                data += contact.getName() + " " + contact.getSurname() + " " +
-                        contact.getPhoneNumber() + " " + contact.getEMail() + " " +
-                        contact.getDateOfBirth() + " " + contact.getCompany() + "\n";
+                data += contact.getName() + " " + (contact.getName().equals("") ? contact.getName() : "null") + " " +
+                        contact.getPhoneNumber() + " " + (contact.getEMail().equals("") ? contact.getEMail() : "null") + " " +
+                        (contact.getDateOfBirth().equals("") ? contact.getDateOfBirth() : "null") + " " +
+                        (contact.getCompany().equals("") ? contact.getCompany() : "null") + "\n";
+//                data += contact.getName() + " " + contact.getSurname() + " " +
+//                        contact.getPhoneNumber() + " " + contact.getEMail() + " " +
+//                        contact.getDateOfBirth() + " " + contact.getCompany() + "\n";
             }
             if (data.equals("")) {
                 System.out.println("Your phone book is empty");
@@ -144,7 +155,7 @@ public class ContactsUtil {
     //тут може виникнути помилка, перевірити на нули!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     private PhoneBook importService(String line) {
         String[] contact = line.split(" ");
-        return new PhoneBook(contact[0],contact[1],Long.parseLong(contact[2]),contact[3],contact[4],contact[5]);
+        return new PhoneBook(contact[0], contact[1], Long.parseLong(contact[2]), contact[3], contact[4], contact[5]);
     }
 
     private void addContact(PhoneBook phoneBook) {
