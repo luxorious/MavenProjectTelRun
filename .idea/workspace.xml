@@ -4,30 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b945fee5-ff14-4a66-b196-a2a24b6b6e10" name="Changes" comment="PhoneBook">
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/ABC_printer_NOT_FINISHED/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/ABC_printer_NOT_FINISHED/LetterPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/Counter/Counter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/Counter/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Control.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Harbor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Ship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/printerScaner/MFU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/printerScaner/MFUDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/symbolCounter/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/symbolCounter/SymbolCounterOneThreading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/symbolCounter/SymbolCounterRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/task.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/textWriter/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/textWriter/TextWriter.java" afterDir="false" />
+    <list default="true" id="b945fee5-ff14-4a66-b196-a2a24b6b6e10" name="Changes" comment="Multithreading">
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/resources/sdfg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/resources/sdfg.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/service/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/service/PhoneBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/userInterface/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/userInterface/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/util/ContactsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/PhoneBook/util/ContactsUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Control.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInput.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +225,7 @@
       <workItem from="1680343142772" duration="4128000" />
       <workItem from="1680431009239" duration="60632000" />
       <workItem from="1681309736910" duration="1189000" />
-      <workItem from="1681312033335" duration="38343000" />
+      <workItem from="1681312033335" duration="44543000" />
     </task>
     <task id="LOCAL-00001" summary="Maven repository">
       <created>1678004174960</created>
@@ -343,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680848359782</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Multithreading">
+      <created>1681546947148</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681546947148</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +355,8 @@
     <MESSAGE value="MorseCode" />
     <MESSAGE value="ToDoList" />
     <MESSAGE value="PhoneBook" />
-    <option name="LAST_COMMIT_MESSAGE" value="PhoneBook" />
+    <MESSAGE value="Multithreading" />
+    <option name="LAST_COMMIT_MESSAGE" value="Multithreading" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

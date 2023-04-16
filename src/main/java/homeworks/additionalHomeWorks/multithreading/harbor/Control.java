@@ -3,13 +3,12 @@ package homeworks.additionalHomeWorks.multithreading.harbor;
 public class Control {
     private Harbor harbor;
     private Ship ship;
-
     public Control(Harbor harbor, Ship ship) {
         this.harbor = harbor;
         this.ship = ship;
     }
 
-    public void canUnload() {
+    public void canUnload(Ship ship, Harbor harbor) {
         int containers = quantityContainers ("enter the number of containers to unload the entire ship enter 'a'");
         if (containers == -1){
             harbor.unload(ship);
@@ -18,7 +17,7 @@ public class Control {
         }
     }
 
-    public void canLoading() {
+    public void canLoading(Ship ship, Harbor harbor) {
         int containers = quantityContainers("enter the number of containers to loading the entire ship enter 'a'");
         if (containers == -1) {
             harbor.loading(ship);

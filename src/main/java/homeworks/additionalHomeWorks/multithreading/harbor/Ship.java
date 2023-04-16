@@ -10,12 +10,11 @@ public class Ship {
 //    модель многопоточной системы должна работать.
 
     private int maxCapacity;
-    private int actualCapacity;
+    private int actualCapacity = 0;
     private String nameOfShip;
 
-    public Ship(int maxCapacity, int actualCapacity, String nameOfShip) {
+    public Ship(int maxCapacity, String nameOfShip) {
         this.maxCapacity = maxCapacity;
-        this.actualCapacity = actualCapacity;
         this.nameOfShip = nameOfShip;
     }
 
@@ -33,5 +32,11 @@ public class Ship {
 
     public void setActualCapacity(int actualCapacity) {
         this.actualCapacity = actualCapacity;
+    }
+
+    @Override
+    public String toString() {
+        return "Ship - " + nameOfShip + " loaded by " +
+                actualCapacity + " of " + maxCapacity;
     }
 }

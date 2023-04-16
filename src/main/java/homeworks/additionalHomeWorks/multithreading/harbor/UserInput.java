@@ -10,10 +10,18 @@ public class UserInput {
         return scanner.nextLine();
     }
 
-//    private int inputInt(String message){
-//        System.out.println(message);
-//        int number = scanner.nextInt();
-//        scanner.nextLine();
-//        return number;
-//    }
+    public static int inputInt(String message){
+        while (true) {
+            try {
+                int number =  Integer.parseInt(input(message));
+                if (number > 0){
+                    return number;
+                } else {
+                    System.out.println("number must be > 0!");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Not a number try again");
+            }
+        }
+    }
 }
