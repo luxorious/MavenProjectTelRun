@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b945fee5-ff14-4a66-b196-a2a24b6b6e10" name="Changes" comment="Multithreading">
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Control.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +224,7 @@
       <workItem from="1680343142772" duration="4128000" />
       <workItem from="1680431009239" duration="60632000" />
       <workItem from="1681309736910" duration="1189000" />
-      <workItem from="1681312033335" duration="44543000" />
+      <workItem from="1681312033335" duration="51521000" />
     </task>
     <task id="LOCAL-00001" summary="Maven repository">
       <created>1678004174960</created>
@@ -332,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681546947148</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Multithreading">
+      <created>1681642362950</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1681642362950</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

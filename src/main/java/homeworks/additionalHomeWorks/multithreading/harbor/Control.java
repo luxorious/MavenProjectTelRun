@@ -3,9 +3,9 @@ package homeworks.additionalHomeWorks.multithreading.harbor;
 public class Control {
     private Harbor harbor;
     private Ship ship;
-    public Control(Harbor harbor, Ship ship) {
+    public Control(Harbor harbor) {
         this.harbor = harbor;
-        this.ship = ship;
+//        this.ship = ship;
     }
 
     public void canUnload(Ship ship, Harbor harbor) {

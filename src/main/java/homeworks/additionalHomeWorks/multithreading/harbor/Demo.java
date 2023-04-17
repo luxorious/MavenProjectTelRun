@@ -2,13 +2,10 @@ package homeworks.additionalHomeWorks.multithreading.harbor;
 
 public class Demo {
     public static void main(String[] args) {
-        int actualCapacity = 3;
-        int quantityNeedsToLoad = 2;
+        Harbor harbor = new Harbor(10, 3);
+        Control control = new Control(harbor);
+        UserInterface ui = new UserInterface(harbor, control);
 
-        if ((actualCapacity - quantityNeedsToLoad) >= 0) {
-//            ship.setActualCapacity(quantityNeedsToLoad);
-            actualCapacity -= quantityNeedsToLoad;
-            System.out.println(actualCapacity);
-        }
+        ui.running();
     }
 }

@@ -1,5 +1,8 @@
 package homeworks.additionalHomeWorks.multithreading.harbor;
 
+import java.sql.Struct;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -14,15 +17,78 @@ public class UserInterface {
     }
 
     public void running() {
-        System.out.println(menu());
-        int switchChoice = UserInput.inputInt("make a choice");
-        switch (switchChoice) {
-            case 1 -> showAllShips();
-            case 2 -> showFreeBerths();
-            case 3 -> sendToLoading();
-            case 4 -> sendToUnload();
-            case 5 -> createShips();
+        boolean start = true;
+        while (start) {
+            System.out.println(menu());
+            int switchChoice = UserInput.inputInt("make a choice");
+
+            switch (switchChoice) {
+                case 1 -> showAllShips();
+                case 2 -> showFreeBerths();
+                case 3 -> sendToLoading();
+                case 4 -> sendToUnload();
+                case 5 -> addToShipList();
+//                case 6 -> fewShipsLoading(choiceShips());
+//                6 - Send few ships to unloading.
+//                7 - Send few ships to loading.
+//                8 - Send ship to unloading and loading.
+                case 9 -> start = false;
+                default -> System.out.println("Wrong choice");
+            }
         }
+    }
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//    private Ship[] choiceShips() {
+//        List<Ship> selectedShips = new ArrayList<>();
+//        while (true) {
+//            int index = UserInput.inputInt("Choice number of ship");
+//            selectedShips.add(ships.get(index));
+//            String quit = UserInput.input("For exit press 'n'");
+//            if (quit.equalsIgnoreCase("n") ||
+//                    selectedShips.size() == ships.size()) {
+//                return selectedShips.toArray(new Ship[]);
+//            }
+//        }
+//    }
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void fewShipsUnloading(Ship... ships) {
+        for (Ship ship : ships) {
+            Thread thread = new Thread(() -> {
+                control.canUnload(ship, harbor);
+            });
+            thread.start();
+        }
+    }
+
+    public void fewShipsLoading(Ship... ships) {
+        for (Ship ship : ships) {
+            Thread thread = new Thread(() -> {
+                control.canLoading(ship, harbor);
+            });
+            thread.start();
+        }
+    }
+
+    public void loadUnload(Ship ship) {
+        Thread thread = new Thread(() -> {
+            control.canUnload(ship, harbor);
+            control.canLoading(ship, harbor);
+        });
+        thread.start();
+    }
+
+    public void fewShipsLoadUnload(Ship... ships) {
+        for (Ship ship : ships) {
+            loadUnload(ship);
+        }
+//        for (Ship ship: ships) {
+//            Thread thread = new Thread(() -> {
+//                control.canUnload(ship, harbor);
+//                control.canLoading(ship, harbor);
+//            });
+//            thread.start();
+//        }
     }
 
     private String menu() {
@@ -32,6 +98,10 @@ public class UserInterface {
                 3 - Send to loading.
                 4 - Send to unloading.
                 5 - Add new ship.
+                6 - Send few ships to unloading.
+                7 - Send few ships to loading.
+                8 - Send ship to unloading and loading.
+                9 - exit.
                 """;
     }
 
@@ -39,21 +109,21 @@ public class UserInterface {
         System.out.println(harbor.getFreeBerths());
     }
 
-    private void createShips() {
+    private Ship createShips() {
+        return new Ship(UserInput.inputInt("Enter max capacity of the ship"),
+                UserInput.input("Input name of ship"));
+    }
+
+    private void addToShipList() {
         while (true) {
-            Ship ship = new Ship(UserInput.inputInt("Enter max capacity of the ship"),
-                    UserInput.input("Input name of ship"));
+            Ship ship = createShips();
 ////////////            ////////////            ////////////            ////////////            ////////////
-            addToShipList(ship);
+            ships.add(ship);
             String addMore = UserInput.input("would you like to add more ships? \n'n' for exit");
             if (addMore.equalsIgnoreCase("n")) {
                 break;
             }
         }
-    }
-
-    private void addToShipList(Ship ship) {
-        ships.add(ship);
     }
 
     private void sendToLoading() {
