@@ -5,6 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b945fee5-ff14-4a66-b196-a2a24b6b6e10" name="Changes" comment="Multithreading">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson31/Example1/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson31/Example1/BankAccountDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson31/Example1/TestThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson31/object/Crossbow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson31/object/TestCrossbow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson31/synchronize/CounterTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson31/synchronize/Ex1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Control.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Demo.java" afterDir="false" />
@@ -106,12 +113,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.homeworks.additionalHomeWorks.multithreading.harbor.Demo">
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.multithreading.Counter.Demo" />
+    <configuration name="BankAccountDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lessons.lesson31.Example1.BankAccountDemo" />
       <module name="MavenProjectTelRun" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworks.additionalHomeWorks.multithreading.Counter.*" />
+          <option name="PATTERN" value="lessons.lesson31.Example1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MFUDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.multithreading.printerScaner.MFUDemo" />
+    <configuration name="CounterTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lessons.lesson31.synchronize.CounterTester" />
       <module name="MavenProjectTelRun" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworks.additionalHomeWorks.multithreading.printerScaner.*" />
+          <option name="PATTERN" value="lessons.lesson31.synchronize.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +139,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="homeworks.additionalHomeWorks.multithreading.ABC_printer_NOT_FINISHED.Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.multithreading.ABC_printer_NOT_FINISHED.Demo" />
+    <configuration name="Ex1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lessons.lesson31.synchronize.Ex1" />
       <module name="MavenProjectTelRun" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworks.additionalHomeWorks.multithreading.ABC_printer_NOT_FINISHED.*" />
+          <option name="PATTERN" value="lessons.lesson31.synchronize.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCrossbow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lessons.lesson31.object.TestCrossbow" />
+      <module name="MavenProjectTelRun" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lessons.lesson31.object.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,26 +178,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="homeworks.additionalHomeWorks.multithreading.textWriter.Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.multithreading.textWriter.Demo" />
-      <module name="MavenProjectTelRun" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homeworks.additionalHomeWorks.multithreading.textWriter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.homeworks.additionalHomeWorks.multithreading.harbor.Demo" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.homeworks.additionalHomeWorks.multithreading.textWriter.Demo" />
-        <item itemvalue="Application.MFUDemo" />
-        <item itemvalue="Application.homeworks.additionalHomeWorks.multithreading.ABC_printer_NOT_FINISHED.Demo" />
+        <item itemvalue="Application.TestCrossbow" />
+        <item itemvalue="Application.CounterTester" />
+        <item itemvalue="Application.Ex1" />
+        <item itemvalue="Application.BankAccountDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +231,7 @@
       <workItem from="1680343142772" duration="4128000" />
       <workItem from="1680431009239" duration="60632000" />
       <workItem from="1681309736910" duration="1189000" />
-      <workItem from="1681312033335" duration="51521000" />
+      <workItem from="1681312033335" duration="63633000" />
     </task>
     <task id="LOCAL-00001" summary="Maven repository">
       <created>1678004174960</created>
@@ -338,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681642362950</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Multithreading">
+      <created>1681754206293</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1681754206293</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

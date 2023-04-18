@@ -1,6 +1,5 @@
 package homeworks.additionalHomeWorks.multithreading.harbor;
 
-import java.sql.Struct;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -25,70 +24,18 @@ public class UserInterface {
             switch (switchChoice) {
                 case 1 -> showAllShips();
                 case 2 -> showFreeBerths();
-                case 3 -> sendToLoading();
-                case 4 -> sendToUnload();
+                case 3 -> sendToLoading(choiceShip());
+                case 4 -> sendToUnload(choiceShip());
                 case 5 -> addToShipList();
-//                case 6 -> fewShipsLoading(choiceShips());
-//                6 - Send few ships to unloading.
-//                7 - Send few ships to loading.
-//                8 - Send ship to unloading and loading.
-                case 9 -> start = false;
+                case 6 -> fewShipsUnloading(choiceShips());
+                case 7 -> fewShipsLoading(choiceShips());
+                case 8 -> loadUnload(choiceShip());
+                case 9 -> unloadLoad(choiceShip());
+                case 10 -> showContainersInHarbor();
+                case 11 -> start = false;
                 default -> System.out.println("Wrong choice");
             }
         }
-    }
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//    private Ship[] choiceShips() {
-//        List<Ship> selectedShips = new ArrayList<>();
-//        while (true) {
-//            int index = UserInput.inputInt("Choice number of ship");
-//            selectedShips.add(ships.get(index));
-//            String quit = UserInput.input("For exit press 'n'");
-//            if (quit.equalsIgnoreCase("n") ||
-//                    selectedShips.size() == ships.size()) {
-//                return selectedShips.toArray(new Ship[]);
-//            }
-//        }
-//    }
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    public void fewShipsUnloading(Ship... ships) {
-        for (Ship ship : ships) {
-            Thread thread = new Thread(() -> {
-                control.canUnload(ship, harbor);
-            });
-            thread.start();
-        }
-    }
-
-    public void fewShipsLoading(Ship... ships) {
-        for (Ship ship : ships) {
-            Thread thread = new Thread(() -> {
-                control.canLoading(ship, harbor);
-            });
-            thread.start();
-        }
-    }
-
-    public void loadUnload(Ship ship) {
-        Thread thread = new Thread(() -> {
-            control.canUnload(ship, harbor);
-            control.canLoading(ship, harbor);
-        });
-        thread.start();
-    }
-
-    public void fewShipsLoadUnload(Ship... ships) {
-        for (Ship ship : ships) {
-            loadUnload(ship);
-        }
-//        for (Ship ship: ships) {
-//            Thread thread = new Thread(() -> {
-//                control.canUnload(ship, harbor);
-//                control.canLoading(ship, harbor);
-//            });
-//            thread.start();
-//        }
     }
 
     private String menu() {
@@ -101,8 +48,69 @@ public class UserInterface {
                 6 - Send few ships to unloading.
                 7 - Send few ships to loading.
                 8 - Send ship to unloading and loading.
-                9 - exit.
+                9 - Send ship to loading and unloading.
+                10 - show containers in harbor.
+                11 - exit.
                 """;
+    }
+
+    private void showContainersInHarbor() {
+        System.out.println(harbor.getActualCapacity() + " containers in harbor.");
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    private Ship[] choiceShips() {
+        List<Ship> selectedShips = new ArrayList<>();
+        while (true) {
+            int index = UserInput.inputInt("Choice number of ship");
+            if (index < ships.size()) {
+                selectedShips.add(ships.get(index));
+            }
+            String quit = UserInput.input("For exit press 'n'");
+            if (quit.equalsIgnoreCase("n") ||
+                    selectedShips.size() == ships.size()) {
+                Ship[] arrayOfShips = new Ship[selectedShips.size()];
+                return selectedShips.toArray(arrayOfShips);
+            }
+        }
+    }
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public void fewShipsUnloading(Ship... ships) {
+        for (Ship ship : ships) {
+            Thread thread = new Thread(() -> control.canUnload(ship, harbor));
+            thread.start();
+        }
+    }
+
+    public void fewShipsLoading(Ship... ships) {
+        List<Ship> copy = new ArrayList<>(Arrays.asList(ships));
+        for (Ship ship : copy) {
+            Thread thread = new Thread(() -> control.canLoading(ship, harbor));
+            thread.start();
+        }
+    }
+
+    public void loadUnload(Ship ship) {
+        Thread thread = new Thread(() -> {
+            control.canUnload(ship, harbor);
+            control.canLoading(ship, harbor);
+        });
+        thread.start();
+    }
+
+    public void unloadLoad(Ship ship) {
+        Thread thread = new Thread(() -> {
+            control.canLoading(ship, harbor);
+            control.canUnload(ship, harbor);
+        });
+        thread.start();
+    }
+
+    public void fewShipsLoadUnload(Ship... ships) {
+        for (Ship ship : ships) {
+            loadUnload(ship);
+        }
     }
 
     private void showFreeBerths() {
@@ -126,14 +134,12 @@ public class UserInterface {
         }
     }
 
-    private void sendToLoading() {
-        int numberOfShip = choiceShip();
-        control.canLoading(ships.get(numberOfShip), harbor);
+    private void sendToLoading(Ship ship) {
+        control.canLoading(ship, harbor);
     }
 
-    private void sendToUnload() {
-        int numberOfShip = choiceShip();
-        control.canUnload(ships.get(numberOfShip), harbor);
+    private void sendToUnload(Ship ship) {
+        control.canUnload(ship, harbor);
     }
 
     private void showAllShips() {
@@ -142,17 +148,16 @@ public class UserInterface {
         }
     }
 
-    private int choiceShip() {
+    private Ship choiceShip() {
         while (true) {
             int numberOfShip = UserInput.inputInt("Enter number of ship which one you want send to loading you has " +
                     ships.size() + " ships.") - 1;
             if (numberOfShip <= ships.size()) {
 //////////////////////////////////////////////////////////////////////////////////////////////////
-                return numberOfShip;
+                return ships.get(numberOfShip);
             } else {
                 System.out.println("Wrong input");
             }
         }
     }
-
 }

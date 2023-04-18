@@ -17,7 +17,7 @@ public class Control {
         }
     }
 
-    public void canLoading(Ship ship, Harbor harbor) {
+    public void canLoading(Ship ship, Harbor harbor) throws IndexOutOfBoundsException{
         int containers = quantityContainers("enter the number of containers to loading the entire ship enter 'a'");
         if (containers == -1) {
             harbor.loading(ship);
