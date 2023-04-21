@@ -2,23 +2,24 @@ package homeworks.additionalHomeWorks.multithreading.harbor;
 
 public class Control {
     private Harbor harbor;
-    private Ship ship;
+
     public Control(Harbor harbor) {
         this.harbor = harbor;
-//        this.ship = ship;
     }
 
     public void canUnload(Ship ship, Harbor harbor) {
-        int containers = quantityContainers ("enter the number of containers to unload the entire ship enter 'a'");
-        if (containers == -1){
+        int containers = quantityContainers("to unload the entire ship " + ship.getNameOfShip() +
+                ", press 'a' or enter the number of containers") - 1;
+        if (containers == -1) {
             harbor.unload(ship);
         } else {
             harbor.unload(ship, containers);
         }
     }
 
-    public void canLoading(Ship ship, Harbor harbor) throws IndexOutOfBoundsException{
-        int containers = quantityContainers("enter the number of containers to loading the entire ship enter 'a'");
+    public void canLoading(Ship ship, Harbor harbor) throws IndexOutOfBoundsException {
+        int containers = quantityContainers("to load the entire ship " + ship.getNameOfShip() +
+                ", press 'a' or enter the number of containers") - 1;
         if (containers == -1) {
             harbor.loading(ship);
         } else {
@@ -35,7 +36,7 @@ public class Control {
             try {
                 String input = UserInput.input(message);
                 if (isFreeBerths() && input.equalsIgnoreCase("a")) {
-                    return -1;
+                    return 0;
                 } else if (isFreeBerths()) {
                     return Integer.parseInt(input);
                 }
@@ -44,5 +45,4 @@ public class Control {
             }
         }
     }
-
 }

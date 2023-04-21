@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class UserInput {
     private static Scanner scanner = new Scanner(System.in);
 
-    public static String input(String message){
+    public synchronized static String input(String message){
         System.out.println(message);
         return scanner.nextLine();
     }
