@@ -25,7 +25,7 @@ public class ShoppingDemo {
 //                    .forEach(uniqueGoods::add);
 //            хотів додати ці значення за допомогою стрімів, але ідея - каже що краще так, як нижче,
 //            але хто я такий щоб спорити з ідеєю...
-            uniqueGoods.addAll(customer.showLastPurchases1(localDate, interval));
+            uniqueGoods.addAll(customer.getHistory().showLastPurchases1(localDate, interval));
 
         }
         System.out.println(uniqueGoods);
