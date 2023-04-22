@@ -28,6 +28,7 @@ public class ShoppingDemo {
             uniqueGoods.addAll(customer.getHistory().showLastPurchases1(localDate, interval));
 
         }
+        //можна вивести гарно через forEach
         System.out.println(uniqueGoods);
     }
 }
