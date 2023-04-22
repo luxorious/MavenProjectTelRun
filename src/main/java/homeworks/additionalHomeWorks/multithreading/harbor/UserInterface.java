@@ -15,6 +15,7 @@ public class UserInterface {
     public UserInterface(Harbor harbor, Control control) {
         this.harbor = harbor;
         this.control = control;
+        this.semaphore = new Semaphore(harbor.getFreeBerths(), true);
     }
 
     public void running() throws InterruptedException {
@@ -84,9 +85,8 @@ public class UserInterface {
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public void fewShipsUnloading(Ship... ships) {
+        //example without semaphore
         countDownLatch = new CountDownLatch(ships.length);
-        semaphore = new Semaphore(ships.length, true);
-        boolean[] freeBerths = new boolean[ships.length];
         for (Ship ship : ships) {
             Thread thread = new Thread(() -> {
                 harbor.setFreeBerths(harbor.getFreeBerths() - 1);//////////////////////////////////if not use semaphore
@@ -104,11 +104,19 @@ public class UserInterface {
     }
 
     public void fewShipsLoading(Ship... ships) {
+//        example with semaphore
         countDownLatch = new CountDownLatch(ships.length);
         for (Ship ship : ships) {
             Thread thread = new Thread(() -> {
-                control.canLoading(ship, harbor);
-                countDownLatch.countDown();
+                try {
+                    semaphore.acquire();
+                    control.canLoading(ship, harbor);
+                    countDownLatch.countDown();
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                } finally {
+                    semaphore.release();
+                }
             });
             thread.start();
         }
