@@ -25,10 +25,6 @@ public class Customer {
         history.showLastPurchases(fromDate, interval);
     }
 
-//    public List<String> showLastPurchases1(LocalDate fromDate, int interval) {
-//        return history.showLastPurchases1(fromDate, interval);
-//    }
-
     public ShoppingHistory getHistory() {
         return history;
     }
