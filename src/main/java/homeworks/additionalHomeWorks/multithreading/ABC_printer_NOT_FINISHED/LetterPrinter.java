@@ -1,28 +1,26 @@
 package homeworks.additionalHomeWorks.multithreading.ABC_printer_NOT_FINISHED;
 
+import java.util.concurrent.CountDownLatch;
+
 public class LetterPrinter implements Runnable {
     private String message;
     private boolean flag = true;
+    private CountDownLatch countDownLatch = new CountDownLatch(1);
 
     public LetterPrinter(String message) {
         this.message = message;
     }
 
     @Override
-    public synchronized void run() {
+    public void run() {
         for (int i = 0; i < 5; i++) {
-            while (!flag) {
-                System.out.print(message);
-                try {
-                    wait();
-                } catch (InterruptedException e) {
-                    System.out.println(e.getMessage());
-                }
+            countDownLatch.countDown();
+            System.out.print(message);
+            try {
+                countDownLatch.await();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
             }
-            flag = false;
-            notifyAll();
         }
     }
-
-
 }

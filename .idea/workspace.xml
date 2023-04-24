@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b945fee5-ff14-4a66-b196-a2a24b6b6e10" name="Changes" comment="Multithreading">
+    <list default="true" id="b945fee5-ff14-4a66-b196-a2a24b6b6e10" name="Changes" comment="Edit Vlad's Task">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Librarian.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/UserInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/Новая папка/task_6/LoadingThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/Новая папка/task_6/MerchantShip.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/Новая папка/task_6/PortDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/Новая папка/task_6/UnloadingThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/Новая папка/task_6/Wharf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/ABC_printer_NOT_FINISHED/LetterPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/ABC_printer_NOT_FINISHED/LetterPrinter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +26,9 @@
       <list>
         <option value="package-info" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -105,30 +108,18 @@
       <recent name="lessons.lesson23.junit" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="homeworks.additionalHomeWorks.multithreading.library" />
       <recent name="lessons.lesson28.multithreading" />
       <recent name="lessons.lesson26.lessoncode" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.homeworks.additionalHomeWorks.multithreading.harbor.Demo">
-    <configuration name="CounterTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lessons.lesson31.synchronize.CounterTester" />
+  <component name="RunManager" selected="Application.Demo">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.multithreading.ABC_printer_NOT_FINISHED.Demo" />
       <module name="MavenProjectTelRun" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lessons.lesson31.synchronize.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ex1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lessons.lesson31.synchronize.Ex1" />
-      <module name="MavenProjectTelRun" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lessons.lesson31.synchronize.*" />
+          <option name="PATTERN" value="homeworks.additionalHomeWorks.multithreading.ABC_printer_NOT_FINISHED.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,6 +133,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lessons.lesson32.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.multithreading.Vlad.ShoppingDemo" />
+      <module name="MavenProjectTelRun" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homeworks.additionalHomeWorks.multithreading.Vlad.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.ShoppingDemo" />
         <item itemvalue="Application.homeworks.additionalHomeWorks.multithreading.harbor.Demo" />
         <item itemvalue="Application.ForceTerminationDemo" />
         <item itemvalue="Application.TestCrossbow" />
-        <item itemvalue="Application.CounterTester" />
-        <item itemvalue="Application.Ex1" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +238,12 @@
       <workItem from="1682013963513" duration="300000" />
       <workItem from="1682095665907" duration="566000" />
       <workItem from="1682096436231" duration="728000" />
-      <workItem from="1682169902953" duration="2836000" />
+      <workItem from="1682169902953" duration="2919000" />
+      <workItem from="1682182304898" duration="1888000" />
+      <workItem from="1682184946408" duration="11000" />
+      <workItem from="1682185081961" duration="14447000" />
+      <workItem from="1682261768936" duration="7666000" />
+      <workItem from="1682355537834" duration="1105000" />
     </task>
     <task id="LOCAL-00001" summary="Maven repository">
       <created>1678004174960</created>
@@ -376,7 +385,42 @@
       <option name="project" value="LOCAL" />
       <updated>1682096503891</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Multithreading">
+      <created>1682174441516</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1682174441516</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Edit Vlad's Task">
+      <created>1682195359113</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1682195359113</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Edit Vlad's Task">
+      <created>1682195654349</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1682195654349</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Edit Vlad's Task">
+      <created>1682195701366</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1682195701366</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Edit Vlad's Task">
+      <created>1682195772818</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1682195772818</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +444,8 @@
     <MESSAGE value="ToDoList" />
     <MESSAGE value="PhoneBook" />
     <MESSAGE value="Multithreading" />
-    <option name="LAST_COMMIT_MESSAGE" value="Multithreading" />
+    <MESSAGE value="Edit Vlad's Task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit Vlad's Task" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
