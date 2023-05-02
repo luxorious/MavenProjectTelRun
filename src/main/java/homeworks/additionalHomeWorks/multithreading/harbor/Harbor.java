@@ -17,20 +17,29 @@ public class Harbor {
 
     public Harbor(int maxCapacity, int berthsNumber) {
         this.maxCapacity = maxCapacity;
+        this.actualCapacity = maxCapacity;
         this.berthsNumber = berthsNumber;
         this.freeBerths = berthsNumber;
     }
 
-    public void unload(Ship ship){
+    public void unload(Ship ship) {
         unload(ship, ship.getActualCapacity());
     }
-    public void unload(Ship ship, int quantityContainersForUnloading){
-        if (actualCapacity + quantityContainersForUnloading > maxCapacity){
+
+    public void unload(Ship ship, int quantityContainersForUnloading) {
+        if (ship.getActualCapacity() == 0) {
+            return;
+        }
+        if (quantityContainersForUnloading > ship.getMaxCapacity()) {
+            quantityContainersForUnloading = ship.getMaxCapacity();
+        }
+        if (actualCapacity + quantityContainersForUnloading > maxCapacity) {
             int canPutInHarbor = maxCapacity - actualCapacity;
             int leaveOnTheShip = quantityContainersForUnloading - canPutInHarbor;
             ship.setActualCapacity(leaveOnTheShip);
+            actualCapacity += canPutInHarbor;
             System.out.println("Ship " + ship.getNameOfShip() +
-                    " unloaded, but harbor is full and "+
+                    " unloaded, but harbor is full and " +
                     leaveOnTheShip + " containers leaved on the ship");
         } else {
             actualCapacity += ship.getActualCapacity();
@@ -42,10 +51,6 @@ public class Harbor {
     //fill to full
     public void loading(Ship ship) {
         int quantityNeedsToLoad = ship.getMaxCapacity() - ship.getActualCapacity();
-//        if (isFull(ship)){
-//            System.out.println("wait");
-//            return;
-//        }
         if ((actualCapacity - quantityNeedsToLoad) >= 0) {
             ship.setActualCapacity(quantityNeedsToLoad);
             actualCapacity -= quantityNeedsToLoad;
@@ -56,7 +61,7 @@ public class Harbor {
 
     //fill part.
     public void loading(Ship ship, int quantityContainersForLoading) {
-        while (ship.getActualCapacity() <= ship.getMaxCapacity()) {
+        while (ship.getActualCapacity() < ship.getMaxCapacity()) {
             if (actualCapacity == 0) {
                 System.out.println("Harbor is empty");
                 break;
@@ -75,7 +80,7 @@ public class Harbor {
         return (actualCapacity + ship.getActualCapacity()) <= maxCapacity;
     }
 
-    private boolean isFreeBerths(){
+    private boolean isFreeBerths() {
         return freeBerths > 0;
     }
 

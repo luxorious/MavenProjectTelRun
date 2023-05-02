@@ -13,7 +13,7 @@ public class Control {
         if (containers == -1) {
             harbor.unload(ship);
         } else {
-            harbor.unload(ship, containers);
+            harbor.unload(ship, containers + 1);
         }
     }
 
@@ -23,7 +23,7 @@ public class Control {
         if (containers == -1) {
             harbor.loading(ship);
         } else {
-            harbor.loading(ship, containers);
+            harbor.loading(ship, containers + 1);
         }
     }
 

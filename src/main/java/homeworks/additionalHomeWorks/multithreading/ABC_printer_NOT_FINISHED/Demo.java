@@ -12,5 +12,6 @@ public class Demo {
         printA.start();
         printB.start();
         printC.start();
+        System.out.println("END");
     }
 }

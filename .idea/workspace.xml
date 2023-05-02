@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b945fee5-ff14-4a66-b196-a2a24b6b6e10" name="Changes" comment="Edit Vlad's Task">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Librarian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/UserInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/PreDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/ABC_printer_NOT_FINISHED/LetterPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/ABC_printer_NOT_FINISHED/LetterPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/ABC_printer_NOT_FINISHED/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/ABC_printer_NOT_FINISHED/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Control.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Harbor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Harbor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Handler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Librarian.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Library.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/UserInput.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +31,8 @@
         <option value="package-info" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -41,7 +45,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,7 +86,8 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -113,7 +118,7 @@
       <recent name="lessons.lesson26.lessoncode" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Demo">
+  <component name="RunManager" selected="Application.homeworks.additionalHomeWorks.multithreading.harbor.Demo">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.multithreading.ABC_printer_NOT_FINISHED.Demo" />
       <module name="MavenProjectTelRun" />
@@ -181,10 +186,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.ShoppingDemo" />
         <item itemvalue="Application.homeworks.additionalHomeWorks.multithreading.harbor.Demo" />
+        <item itemvalue="Application.Demo" />
         <item itemvalue="Application.ForceTerminationDemo" />
+        <item itemvalue="Application.ShoppingDemo" />
         <item itemvalue="Application.TestCrossbow" />
       </list>
     </recent_temporary>
@@ -244,6 +249,11 @@
       <workItem from="1682185081961" duration="14447000" />
       <workItem from="1682261768936" duration="7666000" />
       <workItem from="1682355537834" duration="1105000" />
+      <workItem from="1682791472456" duration="16000" />
+      <workItem from="1682791551699" duration="17000" />
+      <workItem from="1682791610230" duration="49000" />
+      <workItem from="1682792138492" duration="364000" />
+      <workItem from="1682831713453" duration="17550000" />
     </task>
     <task id="LOCAL-00001" summary="Maven repository">
       <created>1678004174960</created>

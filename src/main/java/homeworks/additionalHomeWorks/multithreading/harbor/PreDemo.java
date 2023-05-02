@@ -1,44 +1,45 @@
 package homeworks.additionalHomeWorks.multithreading.harbor;
 
+import lombok.Getter;
+
 import java.util.*;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Semaphore;
 
-public class UserInterface {
-    private List<Ship> ships = List.of(new Ship(4, "1"),
-            new Ship(8, "2"),
-            new Ship(5, "3"),
-            new Ship(7, "4"),
-            new Ship(11, "5"),
-            new Ship(20, "6"),
-            new Ship(12, "7"),
-            new Ship(99, "8"),
-            new Ship(21, "9"),
-            new Ship(10, "10"));//new CopyOnWriteArrayList<>();
+@Getter
+public class PreDemo {
+    private List<Ship> ships;
     private Harbor harbor;
     private Control control;
     private CountDownLatch countDownLatch;
     private Semaphore semaphore;
 
-    public UserInterface(Harbor harbor, Control control) {
+    public PreDemo(Harbor harbor, Control control) {
         this.harbor = harbor;
         this.control = control;
         this.semaphore = new Semaphore(harbor.getFreeBerths(), true);
-
+        this.ships = List.of(new Ship(4, "1"),
+                new Ship(8, "2"),
+                new Ship(5, "3"),
+                new Ship(7, "4"),
+                new Ship(11, "5"),
+                new Ship(20, "6"),
+                new Ship(12, "7"),
+                new Ship(99, "8"),
+                new Ship(21, "9"),
+                new Ship(10, "10"));
     }
 
     public void running() throws InterruptedException {
         boolean start = true;
         while (start) {
             System.out.println(menu());
-            int switchChoice = UserInput.inputInt("make a choice");
+            int switchChoice = new Scanner(System.in).nextInt();
             switch (switchChoice) {
                 case 1 -> showAllShips();
                 case 2 -> showFreeBerths();
                 case 3 -> sendToLoading(choiceShip());
                 case 4 -> sendToUnload(choiceShip());
-                case 5 -> addToShipList();
                 case 6 -> {
                     fewShipsUnloading(choiceShips());
                     countDownLatch.await();
@@ -62,7 +63,6 @@ public class UserInterface {
                 2 - Show free berths.
                 3 - Send to loading.
                 4 - Send to unloading.
-                5 - Add new ship.
                 6 - Send few ships to unloading.
                 7 - Send few ships to loading.
                 8 - Send ship to unloading and loading.
@@ -76,7 +76,6 @@ public class UserInterface {
         System.out.println(harbor.getActualCapacity() + " containers in harbor.");
     }
 
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     private Ship[] choiceShips() {
         Set<Ship> selectedShips = new HashSet<>();
         while (true) {
@@ -91,22 +90,27 @@ public class UserInterface {
             }
         }
     }
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public void fewShipsUnloading(Ship... ships) {
         //example without semaphore
         countDownLatch = new CountDownLatch(ships.length);
         for (Ship ship : ships) {
             Thread thread = new Thread(() -> {
+
                 try {
                     semaphore.acquire();
-                    control.canUnload(ship, harbor);
+                    if (ship.getActualCapacity() == 0) {
+                        System.out.println("ship " + ship.getNameOfShip() + " is empty");
+                    } else {
+                        control.canUnload(ship, harbor);
+                    }
                     countDownLatch.countDown();
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 } finally {
                     semaphore.release();
-                }            });
+                }
+            });
             thread.start();
         }
     }
@@ -161,18 +165,6 @@ public class UserInterface {
         return new Ship(UserInput.inputInt("Enter max capacity of the ship"), UserInput.input("Input name of ship"));
     }
 
-    private void addToShipList() {
-        while (true) {
-            Ship ship = createShips();
-////////////            ////////////            ////////////            ////////////            ////////////
-            ships.add(ship);
-            String addMore = UserInput.input("would you like to add more ships? \n'n' for exit");
-            if (addMore.equalsIgnoreCase("n")) {
-                break;
-            }
-        }
-    }
-
     private void sendToLoading(Ship ship) {
         control.canLoading(ship, harbor);
     }
@@ -189,9 +181,8 @@ public class UserInterface {
 
     private Ship choiceShip() {
         while (true) {
-            int numberOfShip = UserInput.inputInt("Enter number of ship which one you want send to loading you has " + ships.size() + " ships.") - 1;
+            int numberOfShip = new Random().nextInt(ships.size());
             if (numberOfShip <= ships.size()) {
-//////////////////////////////////////////////////////////////////////////////////////////////////
                 return ships.get(numberOfShip);
             } else {
                 System.out.println("Wrong input");
