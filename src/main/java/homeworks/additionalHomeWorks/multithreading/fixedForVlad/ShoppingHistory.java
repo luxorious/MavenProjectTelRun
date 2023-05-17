@@ -1,4 +1,4 @@
-package homeworks.additionalHomeWorks.multithreading.Vlad;
+package homeworks.additionalHomeWorks.multithreading.fixedForVlad;
 
 import java.time.LocalDate;
 import java.util.*;

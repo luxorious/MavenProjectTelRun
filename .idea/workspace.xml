@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b945fee5-ff14-4a66-b196-a2a24b6b6e10" name="Changes" comment="Edit Vlad's Task">
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/PreDemo.java" afterDir="false" />
+    <list default="true" id="b945fee5-ff14-4a66-b196-a2a24b6b6e10" name="Changes" comment="edited task Harbor">
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/chatGPTTasks/recursion/Fibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson35/architector/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson35/architector/UserModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson35/architector/UserUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson35/step3/DeprecatedDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lessons/lesson35/step3/SuppressWarningsDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/ABC_printer_NOT_FINISHED/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/ABC_printer_NOT_FINISHED/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Control.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Harbor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/Harbor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/harbor/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Handler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Librarian.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/Library.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/homeworks/additionalHomeWorks/multithreading/library/UserInput.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +125,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Fibonacci$FibDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.chatGPTTasks.recursion.Fibonacci$FibDemo" />
+      <module name="MavenProjectTelRun" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homeworks.additionalHomeWorks.chatGPTTasks.recursion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ForceTerminationDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lessons.lesson32.ForceTerminationDemo" />
       <module name="MavenProjectTelRun" />
@@ -145,25 +151,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.additionalHomeWorks.multithreading.Vlad.ShoppingDemo" />
+    <configuration name="UserModule" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lessons.lesson35.architector.UserModule" />
       <module name="MavenProjectTelRun" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homeworks.additionalHomeWorks.multithreading.Vlad.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCrossbow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lessons.lesson31.object.TestCrossbow" />
-      <module name="MavenProjectTelRun" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lessons.lesson31.object.*" />
+          <option name="PATTERN" value="lessons.lesson35.architector.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,10 +180,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.homeworks.additionalHomeWorks.multithreading.harbor.Demo" />
+        <item itemvalue="Application.UserModule" />
+        <item itemvalue="Application.Fibonacci$FibDemo" />
         <item itemvalue="Application.Demo" />
         <item itemvalue="Application.ForceTerminationDemo" />
-        <item itemvalue="Application.ShoppingDemo" />
-        <item itemvalue="Application.TestCrossbow" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +246,9 @@
       <workItem from="1682791551699" duration="17000" />
       <workItem from="1682791610230" duration="49000" />
       <workItem from="1682792138492" duration="364000" />
-      <workItem from="1682831713453" duration="17550000" />
+      <workItem from="1682831713453" duration="17633000" />
+      <workItem from="1683044717778" duration="600000" />
+      <workItem from="1683126583338" duration="14021000" />
     </task>
     <task id="LOCAL-00001" summary="Maven repository">
       <created>1678004174960</created>
@@ -430,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682195772818</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="edited task Harbor">
+      <created>1683033144825</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1683033144825</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +457,8 @@
     <MESSAGE value="PhoneBook" />
     <MESSAGE value="Multithreading" />
     <MESSAGE value="Edit Vlad's Task" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit Vlad's Task" />
+    <MESSAGE value="edited task Harbor" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited task Harbor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,8 +1,7 @@
-package homeworks.additionalHomeWorks.multithreading.Vlad;
+package homeworks.additionalHomeWorks.multithreading.fixedForVlad;
 
 import java.time.LocalDate;
 import java.util.LinkedList;
-import java.util.List;
 
 public class Customer {
     private ShoppingHistory history;
